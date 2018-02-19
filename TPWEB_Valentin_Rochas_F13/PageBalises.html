@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Résumé balises</title>
+		<link rel="stylesheet" type="text/css" href="FeuilleCSS.css">
+		<link rel="shortcut icon" type="image/x-icon" href="images\iconepage.png"/>
+	</head>
+
+	<body>
+
+		<h1>LES BALISES</h1>
+		<h2>LES BALISES DE FORMULAIRES</h2>
+		
+		<form method="GET" action="GestionBalises.html" name="Oui">
+			<p>Selectionnez votre role :
+				<input type="radio" name="role"/> SOLO TOP
+				<input type="radio" name="role"/> JUNGLE
+				<input type="radio" name="role"/> MID
+				<input type="radio" name="role"/> ADC
+				<input type="radio" name="role"/> SUPPORT
+			</p>
+
+			<p>
+				Champion : <input type="text" name="skin" size="20" placeholder="Nom du Champion"/>
+			<br/>
+				Skin : <input type="text" name="champion" size="20" placeholder="Nom du skin"/>
+			</p>
+
+			<p>Champions possédés
+				<br/>
+				<input type="checkbox" name="box"/> Akali
+				<input type="checkbox" name="box"/> Veigar
+				<input type="checkbox" name="box"/> Miss Fortune
+				<input type="checkbox" name="box"/> Maitre Yi
+				<input type="checkbox" name="box"/> Volibear
+				<input type="checkbox" name="box"/> Gangplank
+			</p>
+
+			<p>Entrez votre adresse mail et votre mot de passe :
+				<br/>
+				E-mail : <input type="mail" name="box" placeholder="Adresse mail" required/>
+				Mot de passe : <input type="password" name="box" placeholder="Password" required/>
+			</p>
+
+			<p>Entrez votre date de naissance : 
+				<input type="date" name="date">
+			</p>
+
+			<p>Selectionnez votre style de jeu : 
+				<input list="role"/>
+
+				<datalist id="role">
+					<option value="Tank">
+					<option value="Assassin">
+					<option value="DPS">
+					<option value="Healer">
+					<option value="Support">
+				</datalist>
+			</p>
+			Ecrivez un desciption : 
+			<p>
+				<textarea rows="10"> </textarea>
+			</p>
+
+
+			<p>
+				<fieldset>
+					<legend>Informations</legend>
+					Pseudo : <input type="text" autofocus="" name="nom"/> <br/>
+					Mail : <input type="text" name="mail"/> <br/>
+					Mot de passe : <input type="text" name="ankulay"/> <br/>
+					<progress  max="5">
+				</fieldset>
+			</p>
+
+			<p>
+				
+			</p>
+
+
+
+			<p>
+				<button title="BOUTON"> Confirmer </button>
+			</p>
+
+	<p>	
+		<fieldset>
+			<legend>Les autres pages :</legend>
+				<li>
+					<a href="PageImages.html">Page des fonds d'écrans</a>
+				</li>
+				<li>
+					<a href="PageListe.html">Page des listes</a>
+				</li>
+				<li>
+					<a href="PageTableaux.html">Page des tableaux</a>
+				</li>
+				<li>
+					<a href="PageVideoSon.html">Page des vidéos et sons</a>
+				</li>
+		</fieldset>
+	</p>
+
+
+
+			</form>
+
+	</body>
+
+</html>

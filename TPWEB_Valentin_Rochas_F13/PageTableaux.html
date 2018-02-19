@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Résumé tableaux</title>
+		<link rel="stylesheet" type="text/css" href="TableauCSS.css">
+		<link rel="shortcut icon" type="image/x-icon" href="images\iconepage.png"/>
+	</head>
+	
+	<body>
+
+	<table>
+		<caption>
+			Statistiques des contrôles radars sur autoroute A7
+		</caption>
+
+		<tbody>
+			<thead class="titre"><!--Ligne Titre-->
+				<th>Vitesse mesurée en km/h</th>
+				<th>Nombre de véhicules</th>
+				<th>Sanction opérée</th>
+			</thead>
+			<tr class="sansfaute"><!--Ligne 1-->
+				<td>de 90 à 110 km/h</td>
+				<td>325</td>
+				<td>NON</td>
+			</tr>
+			<tr class="sansfaute"><!--Ligne 2-->
+				<td>de 110 à 130 km/h</td>
+				<td>564</td>
+				<td>NON</td>
+			</tr>
+			<tr class="sansfaute"><!--Ligne 3-->
+				<td>de 130 à 140 km/h</td>
+				<td>323</td>
+				<td>NON</td>
+			</tr>
+			<tr class="avecfaute"><!--Ligne 4-->
+				<td>de 140 à 160 km/h</td>
+				<td>223</td>
+				<td>Amende</td>
+			</tr>
+			<tr class="avecfaute"><!--Ligne 5-->
+				<td>de 160 à 190 km/h</td>
+				<td>87</td>
+				<td>Retrait</td>
+			</tr>
+			<tfoot class="titre"><!--Ligne Titre-->
+				<th>Vitesse mesurée en km/h</th>
+				<th>Nombre de véhicules</th>
+				<th>Sanction opérée</th>
+			</tfoot>
+
+		</tbody>
+	</table>
+
+	<br/>
+
+	<table>
+		<caption>
+			Tableaux avec cellules fusionnées
+		</caption>
+		<thead> <!-- conteneur d'en-tête de tableau peut comporter plusieurs lignes -->
+			<tr> <!-- conteneur de ligne -->
+				<th>Case 1</th> <!-- cellule d'en-tête -->
+				<th colspan="2">Cellule horizontal</th> <!-- cellules d'en-tête fusionnées horizontalement-->
+				<!-- ligne absente car cellule fusionnée horizontalement"-->
+			</tr>
+			<tr> <!-- conteneur de ligne -->
+				<th>Case 2</th> 
+				<th>Case 3</th> 
+				<th>Case 4</th>
+			</tr>
+		</thead>
+		<tfoot><!-- conteneur de pied de tableau peut comporter plusieurs lignes et doit se trouver immédiatement après la balise thead -->
+			<tr>
+				<th>Case 5</th>
+				<td>Case 6</td><!-- cellule du tableau -->
+				<td>Case 7</td>
+			</tr>
+		</tfoot>
+		<tbody><!-- conteneur de corps de tableau doit se trouver  après la balise tfoot si elle est présente -->
+			<tr>
+				<th>Case 8</th>
+				<td>Case 9</td>
+				<td rowspan="2">Cellule vertical</td><!-- cellules  fusionnées verticalement -->
+			</tr>
+			<tr>
+				<th>Case 10</th>
+				<td>Case 11</td>
+				<!-- ligne absente car cellule fusionnée verticalement"-->
+			</tr>
+		</tbody>
+	</table>
+
+	<p>	
+		<fieldset>
+			<legend>Les autres pages :</legend>
+				<li>
+					<a href="PageImages.html">Page des fonds d'écrans</a>
+				</li>
+				<li>
+					<a href="PageListe.html">Page des listes</a>
+				</li>
+				<li>
+					<a href="PageBalises.html">Page des balises</a>
+				</li>
+		</fieldset>
+	</p>
+
+	</body>
+</html>
